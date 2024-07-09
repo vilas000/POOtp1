@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <limits>
+
 using namespace std;
 
 void login();
@@ -25,7 +26,6 @@ SERA GERADA UMA ORDEM DE SERVICO QUE DEVE APRESENTAR:
 - O SISTEMA DEVERA ESTAR APTO A GERAR TODO O HISTORICO DE 
 MANUTENCOES DO VEICULO
 */
-
 class Funcionario{
     protected:
         string nome;
@@ -181,6 +181,10 @@ class Mecanico : public Funcionario{
 class Vendedor : public Funcionario{
     public:
         Vendedor(string nome, string senha) : Funcionario(nome, senha) {}
+
+        void cadastroCliente(){
+                            
+        }
 };
 
 class Cliente{
@@ -340,7 +344,7 @@ void vendedorLogin(const string &nome, const string &senha){
     switch(opcao){
         case 1:
             /* Cadastrar cliente e veículo */
-            cadastroCliente();
+            vendedor.cadastroCliente();
             break;
         case 2:
             /*  */
