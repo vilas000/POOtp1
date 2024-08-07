@@ -11,10 +11,10 @@ class User;
 
 class Menu {
 
-vector<User> users;
+vector<User*> users;
 
 public:
-    Menu(vector<User> users);
+    Menu(vector<User*> users);
     ~Menu();
 
     bool login(string usuario, string senha);

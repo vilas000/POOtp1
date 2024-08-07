@@ -16,6 +16,8 @@ public:
     User(string usuario, string senha = "1234");
 
     bool autentica(string senha);
+
+    string getUsuario() const;
     
 };
 
