@@ -15,7 +15,7 @@ public:
 
     User(string usuario, string senha = "1234");
 
-    virtual bool login(string usuario, string senha);
+    bool autentica(string senha);
     
 };
 

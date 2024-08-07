@@ -14,8 +14,10 @@ class Menu {
 vector<User> users;
 
 public:
-    Menu(vector<User>);
+    Menu(vector<User> users);
     ~Menu();
+
+    bool login(string usuario, string senha);
 };
 
 #endif
