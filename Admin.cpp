@@ -1,7 +1,7 @@
 #include "Admin.h"
 
-Admin :: Admin(string usuario, string senha) : User(usuario, senha) {
-}
+Admin :: Admin(string usuario, string senha) : User(usuario, senha) {}
+Admin :: Admin() {}
 Admin :: ~Admin() {}
 
 bool Admin :: editarFunc(Funcionario& funcionario, short operacao, string novo) {

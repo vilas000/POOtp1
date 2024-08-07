@@ -15,12 +15,21 @@ class Funcionario : User {
     bool isDemitido;
 
     bool setNome(string);
-    bool setCpf(string);
+    
     bool setSalario(double);
     bool demite(bool recontrata = 0);
 
 public:
-    Funcionario(string login, string senha, string nome, string cpf, int salario = 0);
+    Funcionario(string login, string senha, string nome = "Joe", string cpf = "000.000.000-00", int salario = 0);
+    Funcionario();
+    ~Funcionario();
+
+    bool setCpf(string);
+
+    string getCpf() const;
+    string getNome() const;
+    double getSalario() const;
+    bool getIsDemitido() const;
 
 };
 

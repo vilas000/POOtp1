@@ -18,6 +18,8 @@ public:
     ~Menu();
 
     bool login(string usuario, string senha);
+
+    void interfaceAdmin();
 };
 
 #endif

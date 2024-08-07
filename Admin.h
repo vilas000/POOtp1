@@ -12,6 +12,9 @@ class Admin : User {
 
 public:
     Admin(string usuario = "admin", string senha = "admin");
+    Admin();
+    ~Admin();
+    
     bool editarFunc(Funcionario& funcionario, short operacao, string novo = "");
 };
 

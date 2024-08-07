@@ -1,19 +1,18 @@
-#ifndef USER_H
-#define USER_H
+#ifndef CLIENTE_H
+#define CLIENTE_H
 
 #include <string>
 
 using namespace std;
 
-class User {
+class Cliente {
+
 
     string usuario, senha;
 
 public:
 
-    User(string usuario, string senha = "1234");
-    User();
-    ~User();
+    
 
     bool autentica(string senha);
 
