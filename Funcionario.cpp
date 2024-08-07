@@ -34,7 +34,7 @@ bool Funcionario :: setCpf(string cpf) {
     output.append("-");
     output.append(aux, 9, 2);
     
-    this->cpf = cpf;
+    this->cpf = output;
 }
 
 bool Funcionario :: setSalario(double salario) {
