@@ -1,0 +1,4 @@
+Não imprimir ordem não aprovada pra manutenção
+deixar alguns métodos privados
+imprimir nome e telefone do cliente caso o mecânico tente fazer uma ordem não aprovada
+ver a questao do bool, talvez tenhamos que trocar tudo para int
